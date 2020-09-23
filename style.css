@@ -1,0 +1,1366 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.case-study__container {
+  display: grid;
+  grid-template-rows: repeat(5, 20vh) repeat(4, min-content) max-content 90vh 90vh;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+#showcase {
+  grid-row: 1 / 5;
+  grid-column: 1 / -1;
+
+  background: -moz-linear-gradient(
+      top,
+      rgba(245, 130, 32, 0.2),
+      rgba(245, 130, 32, 0.5),
+      rgba(245, 130, 32, 1) 100%
+    ),
+    url('https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0%, rgba(245, 130, 32, 0.2)),
+      color-stop(59%, rgba(245, 130, 32, 0.5)),
+      color-stop(100%, rgba(245, 130, 32, 1))
+    ),
+    url('https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+  background: -webkit-linear-gradient(
+      top,
+      rgba(245, 130, 32, 0.2),
+      rgba(245, 130, 32, 0.5),
+      rgba(245, 130, 32, 1) 100%
+    ),
+    url('https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+  background: -o-linear-gradient(
+      top,
+      rgba(245, 130, 32, 0.2),
+      rgba(245, 130, 32, 0.5),
+      rgba(245, 130, 32, 1) 100%
+    ),
+    url('https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+  background: -ms-linear-gradient(
+      top,
+      rgba(245, 130, 32, 0.2),
+      rgba(245, 130, 32, 0.5),
+      rgba(245, 130, 32, 1) 100%
+    ),
+    url('https: //geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(245, 130, 32, 0.2),
+      rgba(245, 130, 32, 0.5),
+      rgba(245, 130, 32, 1) 100%
+    ),
+    url('https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg')
+      no-repeat;
+
+  background-size: cover;
+  background-position: center center;
+
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.name {
+  grid-row: 2 / 4;
+  grid-column: 4 / 6;
+
+  color: white;
+  font-size: 3rem;
+  font-weight: light;
+}
+
+.subheading {
+  grid-row: 2 / 4;
+  grid-column: 8 / 10;
+
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+#explainer-text {
+  background-color: #cacaca;
+
+  grid-row: 5 / 9;
+  grid-column: 1 / -1;
+
+  display: grid;
+
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.company-info {
+  grid-row: 4 / -1;
+  grid-column: 3 / 8;
+}
+
+.company-info img {
+  width: 100%;
+
+  margin-bottom: 40px;
+}
+
+.company-info div {
+  font-size: 3rem;
+}
+
+.sidebar {
+  grid-row: 4 / 9;
+  grid-column: 8 / 11;
+
+  border-left: 10px solid rgba(245, 130, 32, 1);
+  margin-left: 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar div {
+  width: 100%;
+  height: 33%;
+  font-size: 4rem;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+#floating-image {
+  grid-column: 3 / 11;
+  grid-row: 3 / 6;
+  z-index: 9000;
+
+  display: grid;
+  place-items: center;
+}
+
+#floating-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  border-radius: 30px;
+
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#genie-info {
+  grid-column: 1 / -1;
+  grid-row: 10 / 11;
+
+  display: grid;
+  grid-template-rows: repeat(6, 10vh) repeat(6, min-content);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.container-svg {
+  grid-column: 1 / -1;
+  grid-row: 1/ 8;
+
+  display: grid;
+
+  position: relative;
+}
+
+.background-image {
+  margin-top: 0%;
+  background-image: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-box {
+  background-color: white;
+  grid-row: 8 / -1;
+  grid-column: 1 / -1;
+
+  display: grid;
+
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.left-column {
+  grid-row: 3 / 5;
+  grid-column: 2 / 6;
+}
+
+.left-column__title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgba(245, 130, 32, 1);
+  margin-bottom: 10px;
+}
+
+.left-column__body {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.right-column {
+  grid-row: 1 / -1;
+  grid-column: 7 / 11;
+
+  font-size: 7rem;
+  font-weight: bold;
+
+  display: grid;
+  place-items: center;
+}
+
+.genie-image {
+  grid-row: 5 / 10;
+  grid-column: 2 / 6;
+  z-index: 8000;
+  display: grid;
+  place-items: center;
+}
+
+.genie-image__circle {
+  height: 475px;
+  width: 475px;
+  background-image: url('https://geniecast.com/wp-content/uploads/2019/11/Simon-Bailey.jpg');
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 12;
+  border-radius: 50%;
+
+  -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+#section__4 {
+  grid-column: 1 / -1;
+  grid-row: 11 / 12;
+  background-image: url('https://geniecast.com/wp-content/uploads/2020/09/Depositphotos_263535424_xl-2015-scaled.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: grid;
+
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.section-4__content {
+  grid-row: 2 / 8;
+  grid-column: 2 / 5;
+
+  display: grid;
+  place-items: center;
+
+  font-weight: bold;
+  color: white;
+  font-size: 7rem;
+}
+
+#section__5 {
+  background-color: #cacaca;
+  grid-column: 1 / -1;
+  grid-row: 12 / -1;
+
+  display: grid;
+
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.orange-border {
+  grid-row: 1 / 5;
+  grid-column: 3 / 11;
+
+  border-left: 10px dashed rgba(245, 130, 32, 1);
+  border-right: 10px dashed rgba(245, 130, 32, 1);
+  border-bottom: 10px dashed rgba(245, 130, 32, 1);
+}
+
+.title-one {
+  display: grid;
+  place-items: center;
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+}
+
+.image-one {
+  grid-row: 4 / 6;
+  grid-column: 2 / 4;
+
+  display: grid;
+  place-items: center;
+}
+
+.image-container__one {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-image: url('https://geniecast.com/wp-content/uploads/2017/10/steve-wozniak-program_1.jpg');
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.title-two {
+  display: grid;
+  place-items: center;
+  grid-row: 3 / 4;
+  grid-column: 6 / 8;
+
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+}
+
+.image-two {
+  grid-row: 4 / 6;
+  grid-column: 6 / 8;
+
+  display: grid;
+  place-items: center;
+}
+
+.image-container__two {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-image: url('https://geniecast.com/wp-content/uploads/2017/10/chris-westfall-program-3.jpg');
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.title-three {
+  display: grid;
+  place-items: center;
+  grid-row: 3 / 4;
+  grid-column: 10 / 12;
+
+  font-weight: bold;
+  color: black;
+  font-size: 3rem;
+}
+
+.image-three {
+  grid-row: 4 / 6;
+  grid-column: 10 / 12;
+
+  display: grid;
+  place-items: center;
+}
+
+.image-container__three {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  background-image: url('https://geniecast.com/wp-content/uploads/2017/10/kristie_pretti-frontczak_4.jpg');
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.section-5__body {
+  grid-row: 7 / -1;
+  grid-column: 3 / 11;
+
+  font-weight: bold;
+  color: black;
+  font-size: 2rem;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) and (max-width: 1550px) {
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .case-study__container {
+    grid-template-rows: repeat(5, 20vh) repeat(4, min-content) max-content 90vh 90vh;
+  }
+
+  .name {
+    grid-column: 3 / 6;
+  }
+
+  .subheading {
+    grid-column: 8 / 11;
+  }
+
+  #floating-image {
+    grid-column: 2 / 12;
+    grid-row: 3 / 6;
+    z-index: 9000;
+
+    display: grid;
+    place-items: center;
+  }
+
+  #floating-image img {
+    object-fit: cover;
+    object-position: 25% 50%;
+    display: block;
+  }
+
+  .company-info {
+    margin-top: 50px;
+    grid-row: 3 / -1;
+    grid-column: 3 / 8;
+  }
+
+  .company-info img {
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+  .company-info div {
+    font-size: 3rem;
+  }
+
+  .sidebar {
+    margin-top: 50px;
+    grid-row: 3 / 9;
+    grid-column: 8 / 11;
+
+    border-left: 10px solid rgba(245, 130, 32, 1);
+    margin-left: 20px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  #genie-info {
+    grid-column: 1 / -1;
+    grid-row: 10 / 11;
+
+    display: grid;
+    grid-template-rows: repeat(6, 10vh) repeat(6, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .genie-image__circle {
+    height: 400px;
+    width: 400px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2019/11/Simon-Bailey.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 12;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .image-container__one {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/steve-wozniak-program_1.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .image-container__two {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/chris-westfall-program-3.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .image-container__three {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/kristie_pretti-frontczak_4.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .section-4__content {
+    font-size: 5rem;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .case-study__container {
+    grid-template-rows: repeat(5, 20vh) repeat(4, min-content) max-content 90vh min-content;
+  }
+
+  .name {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 4rem;
+    font-weight: light;
+  }
+
+  .subheading {
+    grid-row: 4 / 6;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 5.5rem;
+    font-weight: bold;
+  }
+
+  #floating-image {
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
+    z-index: 9000;
+
+    display: grid;
+    place-items: center;
+  }
+
+  #explainer-text {
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .company-info {
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+  }
+  .sidebar {
+    margin-top: 40px;
+    grid-row: 3 / -1;
+    grid-column: 2 / 12;
+
+    border-top: 10px solid rgba(245, 130, 32, 1);
+    border-left: none;
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar div {
+    width: 100%;
+    height: 33%;
+    font-size: 3rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  #genie-info {
+    grid-column: 1 / -1;
+    grid-row: 10 / 11;
+
+    display: grid;
+    grid-template-rows: repeat(6, 10vh) repeat(6, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .genie-image__circle {
+    height: 400px;
+    width: 400px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2019/11/Simon-Bailey.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 12;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .container-svgg {
+    grid-column: 1 / -1;
+    grid-row: 1/ 6;
+
+    display: grid;
+
+    position: relative;
+  }
+
+  .genie-image {
+    grid-row: 4 / 9;
+    grid-column: 2 / 12;
+    z-index: 8000;
+    display: grid;
+    place-items: center;
+  }
+
+  .text-box {
+    background-color: white;
+    grid-row: 8 / -1;
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-rows: 1fr repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .left-column {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+    display: grid;
+    align-items: center;
+  }
+
+  .left-column__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(245, 130, 32, 1);
+    margin-bottom: 10px;
+  }
+
+  .left-column__body {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .right-column {
+    margin-top: 20px;
+    grid-row: 4 / -1;
+    grid-column: 2 / 12;
+
+    font-size: 5rem;
+    font-weight: bold;
+
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .image-container__one {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/steve-wozniak-program_1.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .image-container__two {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/chris-westfall-program-3.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .image-container__three {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/kristie_pretti-frontczak_4.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .case-study__container {
+    grid-template-rows: repeat(5, 20vh) repeat(4, min-content) max-content 90vh min-content;
+  }
+
+  .name {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 4rem;
+    font-weight: light;
+  }
+
+  .subheading {
+    grid-row: 4 / 6;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 5.5rem;
+    font-weight: bold;
+  }
+
+  #floating-image {
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
+    z-index: 9000;
+
+    display: grid;
+    place-items: center;
+  }
+
+  #floating-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25% 50%;
+    display: block;
+
+    border-radius: 30px;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  #explainer-text {
+    grid-template-rows: 0.8fr 1fr 0.5fr;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .company-info {
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+  }
+
+  .company-info img {
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+  .company-info div {
+    font-size: 2rem;
+  }
+
+  .sidebar {
+    margin-top: 40px;
+    grid-row: 3 / -1;
+    grid-column: 2 / 12;
+
+    border-top: 10px solid rgba(245, 130, 32, 1);
+    border-left: none;
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar div {
+    width: 100%;
+    height: 33%;
+    font-size: 3rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  #genie-info {
+    grid-column: 1 / -1;
+    grid-row: 10 / 11;
+
+    display: grid;
+    grid-template-rows: repeat(6, 10vh) repeat(6, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .genie-image__circle {
+    height: 350px;
+    width: 350px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2019/11/Simon-Bailey.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 12;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .container-svgg {
+    grid-column: 1 / -1;
+    grid-row: 1/ 6;
+
+    display: grid;
+
+    position: relative;
+  }
+
+  .genie-image {
+    grid-row: 4 / 9;
+    grid-column: 2 / 12;
+    z-index: 8000;
+    display: grid;
+    place-items: center;
+  }
+
+  .text-box {
+    background-color: white;
+    grid-row: 8 / -1;
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-rows: 1fr repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .left-column {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+    display: grid;
+    align-items: center;
+  }
+
+  .left-column__title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgba(245, 130, 32, 1);
+    margin-bottom: 10px;
+  }
+
+  .left-column__body {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .right-column {
+    margin-top: 20px;
+    grid-row: 4 / -1;
+    grid-column: 2 / 12;
+
+    font-size: 5rem;
+    font-weight: bold;
+
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .section-4__content {
+    grid-row: 2 / 8;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+
+    font-weight: bold;
+    color: white;
+    font-size: 6rem;
+  }
+
+  #section__5 {
+    background-color: #cacaca;
+    grid-column: 1 / -1;
+    grid-row: 12 / -1;
+
+    display: grid;
+
+    grid-template-rows: repeat(12, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .orange-border {
+    display: none;
+  }
+
+  .title-one {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+    place-items: start;
+  }
+
+  .image-one {
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__one {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/steve-wozniak-program_1.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .title-two {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    grid-row: 4 / 5;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .image-two {
+    grid-row: 5 / 6;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__two {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/chris-westfall-program-3.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .title-three {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    grid-row: 7 / 8;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .image-three {
+    grid-row: 8 / 9;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__three {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/kristie_pretti-frontczak_4.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .section-5__body {
+    margin-top: 50px;
+    grid-row: 10 / -1;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .case-study__container {
+    grid-template-rows: repeat(5, 20vh) repeat(4, min-content) max-content 90vh min-content;
+  }
+
+  .name {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 3rem;
+    font-weight: light;
+  }
+
+  .subheading {
+    grid-row: 4 / 6;
+    grid-column: 2 / 12;
+
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+  }
+
+  #floating-image {
+    grid-column: 2 / 12;
+    grid-row: 4 / 6;
+    z-index: 9000;
+
+    display: grid;
+    place-items: center;
+  }
+
+  #floating-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25% 50%;
+    display: block;
+
+    border-radius: 30px;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  #explainer-text {
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  .company-info {
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+  }
+
+  .company-info img {
+    width: 100%;
+
+    margin-bottom: 40px;
+  }
+
+  .company-info div {
+    font-size: 2rem;
+  }
+
+  .sidebar {
+    margin-top: 20px;
+    grid-row: 3 / -1;
+    grid-column: 2 / 12;
+
+    border-top: 10px solid rgba(245, 130, 32, 1);
+    border-left: none;
+    margin-left: 0;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar div {
+    width: 100%;
+    height: 33%;
+    font-size: 3rem;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  #genie-info {
+    grid-column: 1 / -1;
+    grid-row: 10 / 11;
+
+    display: grid;
+    grid-template-rows: repeat(6, 10vh) repeat(6, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .genie-image__circle {
+    height: 300px;
+    width: 300px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2019/11/Simon-Bailey.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 12;
+    border-radius: 50%;
+
+    -webkit-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .container-svgg {
+    grid-column: 1 / -1;
+    grid-row: 1/ 6;
+
+    display: grid;
+
+    position: relative;
+  }
+
+  .genie-image {
+    grid-row: 3 / 8;
+    grid-column: 2 / 6;
+    z-index: 8000;
+    display: grid;
+    place-items: center;
+  }
+
+  .text-box {
+    background-color: white;
+    grid-row: 6 / -1;
+    grid-column: 1 / -1;
+
+    display: grid;
+
+    grid-template-rows: 1.5fr repeat(7, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .left-column {
+    grid-row: 2 / 4;
+    grid-column: 2 / 12;
+    display: grid;
+    align-items: center;
+  }
+
+  .left-column__title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(245, 130, 32, 1);
+    margin-bottom: 10px;
+  }
+
+  .left-column__body {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+  }
+
+  .right-column {
+    margin-top: 20px;
+    grid-row: 4 / -1;
+    grid-column: 2 / 12;
+
+    font-size: 5rem;
+    font-weight: bold;
+
+    display: grid;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .section-4__content {
+    grid-row: 2 / 8;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+  }
+
+  #section__5 {
+    background-color: #cacaca;
+    grid-column: 1 / -1;
+    grid-row: 12 / -1;
+
+    display: grid;
+
+    grid-template-rows: repeat(12, min-content);
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .orange-border {
+    display: none;
+  }
+
+  .title-one {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+    place-items: start;
+  }
+
+  .image-one {
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__one {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/steve-wozniak-program_1.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .title-two {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    grid-row: 4 / 5;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .image-two {
+    grid-row: 5 / 6;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__two {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/chris-westfall-program-3.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .title-three {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+    grid-row: 7 / 8;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 3rem;
+  }
+
+  .image-three {
+    grid-row: 8 / 9;
+    grid-column: 2 / 12;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .image-container__three {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-image: url('https://geniecast.com/wp-content/uploads/2017/10/kristie_pretti-frontczak_4.jpg');
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .section-5__body {
+    margin-top: 30px;
+    grid-row: 10 / -1;
+    grid-column: 2 / 12;
+
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}

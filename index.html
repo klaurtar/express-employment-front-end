@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Express Case Study</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="case-study__container">
+      <section id="showcase">
+        <div class="name">
+          Express <br />
+          Employment <br />
+          Professionals
+        </div>
+        <div class="subheading">
+          LOREM IPSUM <br />
+          DOLOR SIT
+        </div>
+      </section>
+      <section id="floating-image">
+        <img
+          src="https://geniecast.com/wp-content/uploads/2020/09/express_1.jpg"
+          alt=""
+        />
+      </section>
+      <section id="explainer-text">
+        <div class="company-info">
+          <img
+            src="https://geniecast.com/wp-content/uploads/2020/09/Express-Logo-PNG.png"
+            alt=""
+          />
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac
+            mauris mauris. Aenean lobortis odio in tincidunt tempor. Curabitur
+            quis sagittis tortor. Nullam interdum ligula at dui tempus mollis.
+            Aenean nec neque ut elit dapibus tristique. Pellentesque interdum
+            augue consectetur, hendrerit lorem vel, lacinia felis.
+          </div>
+        </div>
+        <div class="sidebar">
+          <div>LOREM</div>
+          <div>LOREM</div>
+          <div>LOREM</div>
+        </div>
+      </section>
+      <section id="genie-info">
+        <div class="container-svg">
+          <div class="background-image"></div>
+          <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <path
+              d="
+                    M 0,50
+                    C 100,100 300,0 500,15
+                    L 500,00 
+                    L 0,0 
+                    Z"
+              style="stroke: none; fill: #cacaca"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="text-box">
+          <div class="left-column">
+            <div class="left-column__title">LOREM IPSUM</div>
+            <div class="left-column__body">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+              optio ea, tempore voluptatum aspernatur quam vitae eius.
+              Dignissimos corporis ex, consequuntur officia, nihil atque ducimus
+              reprehenderit temporibus quod commodi nobis!
+            </div>
+          </div>
+          <div class="right-column">
+            Lorem ipsum dolor sit amet, consectetur adipisicing, sed do
+          </div>
+        </div>
+
+        <div class="genie-image">
+          <div class="genie-image__circle"></div>
+        </div>
+      </section>
+      <section id="section__4">
+        <div class="section-4__content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellusfff
+        </div>
+      </section>
+      <section id="section__5">
+        <div class="orange-border"></div>
+
+        <div class="title-one">LOREM</div>
+        <div class="image-one">
+          <div class="image-container__one"></div>
+        </div>
+
+        <div class="title-two">LOREM</div>
+        <div class="image-two">
+          <div class="image-container__two"></div>
+        </div>
+
+        <div class="title-three">LOREM</div>
+        <div class="image-three">
+          <div class="image-container__three"></div>
+        </div>
+
+        <div class="section-5__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+          lacus vel facilisis
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  <script>
+    // gsap.from('#floating-image', {
+    //   duration: 2,
+    //   opacity: 0,
+    // });
+    gsap.from('#floating-image', {
+      duration: 2,
+      x: -200,
+      opacity: 0,
+    });
+    // gsap.from('#explainer-text', {
+    //   duration: 2,
+    //   backgroundPosition: '200px 0px',
+    //   y: 200,
+    //   opacity: 0,
+    // });
+    // gsap.from('#genie-info', {
+    //   duration: 2,
+    //   backgroundPosition: '200px 0px',
+    //   y: 200,
+    //   opacity: 0,
+    // });
+  </script>
+</html>
